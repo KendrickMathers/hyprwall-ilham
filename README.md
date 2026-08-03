@@ -1,29 +1,84 @@
-# HyprWall-ilham
+# HyprWall
 
-A simple GTK4 animated wallpaper picker for Hyprland using **mpvpaper**.
+A modern GTK4 animated wallpaper picker for **Hyprland**, powered by **mpvpaper**.
 
-> Personal project by Ilham. Created as a lightweight replacement for Waytrogen with support for animated wallpapers.
+HyprWall provides a lightweight graphical interface for browsing, previewing and applying animated wallpapers on Hyprland without manually using terminal commands.
+
+> Personal open-source project by Ilham.
 
 ---
 
 ## ✨ Features
 
-- 🎥 Animated wallpapers (.mp4, .webm, .mkv)
+- 🎥 Animated wallpaper support (`.mp4`, `.webm`, `.mkv`)
 - 🖼️ Automatic thumbnail generation
-- 🖱️ One-click wallpaper apply
-- 🔁 Infinite video looping
-- 🚀 Fast GTK4 interface
-- 📁 Automatically detects new wallpapers
+- 🖱️ One-click wallpaper switching
+- 🔁 Infinite wallpaper looping
+- 🚀 Lightweight GTK4 interface
+- 📂 Automatic wallpaper detection
+- 💻 Designed specifically for Hyprland + mpvpaper
 
 ---
 
-## 📦 Dependencies
+## 📸 Preview
 
-Arch / CachyOS
+> *(Add screenshots here later)*
+
+```
+screenshots/main.png
+```
+
+---
+
+## 📦 Requirements
+
+Arch Linux / CachyOS
 
 ```bash
 sudo pacman -S python python-gobject gtk4 libadwaita ffmpeg mpvpaper
 ```
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/KendrickMathers/hyprwall-ilham.git
+```
+
+Go to the project
+
+```bash
+cd hyprwall-ilham
+```
+
+Run
+
+```bash
+python main.py
+```
+
+---
+
+## 📂 Wallpaper Folder
+
+Store your animated wallpapers here
+
+```
+~/Pictures/Wallpapers/animated
+```
+
+Supported formats
+
+- mp4
+- webm
+- mkv
+
+Simply copy new wallpapers into the folder.
+
+HyprWall will automatically detect them.
 
 ---
 
@@ -35,82 +90,46 @@ HyprWall/
 ├── thumbnail.py
 ├── apply.sh
 ├── requirements.txt
-├── .gitignore
 ├── README.md
+├── .gitignore
 └── thumbnails/
-```
-
----
-
-## 📂 Wallpaper Directory
-
-Put all animated wallpapers here:
-
-```
-~/Pictures/Wallpapers/animated
-```
-
-Supported formats:
-
-- mp4
-- webm
-- mkv
-
-Simply copy new videos into the folder.
-
-No code changes are required.
-
----
-
-## ▶️ Run
-
-```bash
-cd ~/Projects/HyprWall
-python main.py
-```
-
-Or, if the desktop launcher has been installed:
-
-```bash
-hyprwall
 ```
 
 ---
 
 ## 🖼️ Thumbnail Cache
 
-Thumbnails are automatically generated inside:
+Thumbnails are automatically generated inside
 
 ```
-~/Projects/HyprWall/thumbnails
+thumbnails/
 ```
 
-This folder is ignored by Git.
+This directory is ignored by Git.
 
 ---
 
-## 🚀 Backup & Restore
+## 🔄 Backup
 
-Clone the repository:
+Clone the repository
 
 ```bash
-git clone git@github.com:KendrickMathers/hyprwall-ilham.git
+git clone https://github.com/KendrickMathers/hyprwall-ilham.git
 ```
 
-Install dependencies:
+Install dependencies
 
 ```bash
 sudo pacman -S python python-gobject gtk4 libadwaita ffmpeg mpvpaper
 ```
 
-Run:
+Run
 
 ```bash
-cd hyprwall-ilham
 python main.py
 ```
 
-Finally, restore your animated wallpapers into:
+Restore your wallpapers into
 
 ```
 ~/Pictures/Wallpapers/animated
@@ -118,14 +137,34 @@ Finally, restore your animated wallpapers into:
 
 ---
 
-## 📌 Notes
+## 🛣️ Roadmap
 
-- Wallpapers are **not included** in this repository.
-- Keep your wallpaper collection backed up separately (Google Drive, OneDrive, external SSD, etc.).
-- The application will automatically detect newly added wallpapers.
+- [x] Animated wallpapers
+- [x] Automatic thumbnails
+- [x] One-click wallpaper switching
+- [ ] Search wallpapers
+- [ ] Favorites
+- [ ] Multi-monitor support
+- [ ] Wallpaper preview
+- [ ] Settings page
+- [ ] Drag & Drop wallpapers
+
+---
+
+## 🤝 Contributing
+
+Contributions, feature requests and bug reports are welcome.
+
+Feel free to open an Issue or Pull Request.
 
 ---
 
 ## 📄 License
 
-Personal project for learning and backup purposes.
+MIT License
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
