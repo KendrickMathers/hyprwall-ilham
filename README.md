@@ -22,12 +22,9 @@ HyprWall provides a lightweight graphical interface for browsing, previewing and
 
 ## 📸 Preview
 
-> *(Add screenshots here later)*
-
-```
-screenshots/main.png
-```
-
+<p align="center">
+  <img src="screenshots/main.jpg" width="900" alt="HyprWall Preview">
+</p>
 ---
 
 ## 📦 Requirements
