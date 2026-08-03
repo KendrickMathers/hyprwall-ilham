@@ -1,33 +1,45 @@
-# HyprWall
+<p align="center">
+  <img src="assets/logo.png" width="140" alt="HyprWall Logo">
+</p>
 
-A modern GTK4 animated wallpaper picker for **Hyprland**, powered by **mpvpaper**.
-
-HyprWall provides a lightweight graphical interface for browsing, previewing and applying animated wallpapers on Hyprland without manually using terminal commands.
-
-> Personal open-source project by Ilham.
-
----
-
-## ✨ Features
-
-- 🎥 Animated wallpaper support (`.mp4`, `.webm`, `.mkv`)
-- 🖼️ Automatic thumbnail generation
-- 🖱️ One-click wallpaper switching
-- 🔁 Infinite wallpaper looping
-- 🚀 Lightweight GTK4 interface
-- 📂 Automatic wallpaper detection
-- 💻 Designed specifically for Hyprland + mpvpaper
-
----
-
-## 📸 Preview
+<h1 align="center">HyprWall</h1>
 
 <p align="center">
-  <img src="screenshots/main.jpg" width="900" alt="HyprWall Preview">
+A modern GTK4 video wallpaper picker for Hyprland powered by <b>mpvpaper</b>.
 </p>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.14-blue?style=for-the-badge)
+![GTK4](https://img.shields.io/badge/GTK4-LibAdwaita-4caf50?style=for-the-badge)
+![Wayland](https://img.shields.io/badge/Wayland-Hyprland-orange?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
+</p>
+
 ---
 
-## 📦 Requirements
+# 📷 Preview
+
+<p align="center">
+<img src="screenshots/main.jpg" width="100%">
+</p>
+
+---
+
+# ✨ Features
+
+- 🎥 Video wallpaper support
+- ⚡ One-click wallpaper switching
+- 🖼 Automatic thumbnail generation
+- 🐧 Native GTK4 interface
+- 🚀 Lightweight
+- 💙 Designed for Hyprland
+- 🎬 mpvpaper backend
+
+---
+
+# 📦 Requirements
 
 Arch Linux / CachyOS
 
@@ -37,15 +49,15 @@ sudo pacman -S python python-gobject gtk4 libadwaita ffmpeg mpvpaper
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
-Clone the repository
+Clone repository
 
 ```bash
 git clone https://github.com/KendrickMathers/hyprwall-ilham.git
 ```
 
-Go to the project
+Enter project
 
 ```bash
 cd hyprwall-ilham
@@ -59,109 +71,44 @@ python main.py
 
 ---
 
-## 📂 Wallpaper Folder
+# 📂 Project Structure
 
-Store your animated wallpapers here
-
-```
-~/Pictures/Wallpapers/animated
-```
-
-Supported formats
-
-- mp4
-- webm
-- mkv
-
-Simply copy new wallpapers into the folder.
-
-HyprWall will automatically detect them.
-
----
-
-## 📁 Project Structure
-
-```
-HyprWall/
-├── main.py
-├── thumbnail.py
+```text
+HyprWall
+├── assets
+│   └── logo.png
+├── screenshots
+│   └── main.jpg
 ├── apply.sh
+├── thumbnail.py
+├── main.py
 ├── requirements.txt
-├── README.md
-├── .gitignore
-└── thumbnails/
+├── LICENSE
+└── README.md
 ```
 
 ---
 
-## 🖼️ Thumbnail Cache
+# 🛣 Roadmap
 
-Thumbnails are automatically generated inside
-
-```
-thumbnails/
-```
-
-This directory is ignored by Git.
-
----
-
-## 🔄 Backup
-
-Clone the repository
-
-```bash
-git clone https://github.com/KendrickMathers/hyprwall-ilham.git
-```
-
-Install dependencies
-
-```bash
-sudo pacman -S python python-gobject gtk4 libadwaita ffmpeg mpvpaper
-```
-
-Run
-
-```bash
-python main.py
-```
-
-Restore your wallpapers into
-
-```
-~/Pictures/Wallpapers/animated
-```
-
----
-
-## 🛣️ Roadmap
-
-- [x] Animated wallpapers
-- [x] Automatic thumbnails
-- [x] One-click wallpaper switching
-- [ ] Search wallpapers
+- [x] Video wallpaper
+- [x] GTK4 UI
+- [x] Thumbnail generation
+- [x] One-click apply
 - [ ] Favorites
+- [ ] Search
+- [ ] Hover preview
 - [ ] Multi-monitor support
-- [ ] Wallpaper preview
-- [ ] Settings page
-- [ ] Drag & Drop wallpapers
+- [ ] Wallpaper history
 
 ---
 
-## 🤝 Contributing
+# 📄 License
 
-Contributions, feature requests and bug reports are welcome.
-
-Feel free to open an Issue or Pull Request.
+Released under the MIT License.
 
 ---
 
-## 📄 License
-
-MIT License
-
----
-
-## ⭐ Support
-
-If you like this project, consider giving it a ⭐ on GitHub.
+<p align="center">
+Made with ❤️ for the Hyprland community.
+</p>
