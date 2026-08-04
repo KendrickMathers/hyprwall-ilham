@@ -75,13 +75,12 @@ class HyprWall(Gtk.Application):
 
     def apply_wallpaper(self, button, path):
 
-        subprocess.Popen([
-            os.path.expanduser(
-                "~/Projects/HyprWall/apply.sh"
-            ),
-            path
-        ])
+        script = os.path.join(
+             os.path.dirname(os.path.abspath(__file__)),
+            "apply.sh"
+)
 
+        subprocess.Popen([script, path])
 
 app = HyprWall()
 app.run()
